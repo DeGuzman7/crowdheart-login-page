@@ -73,14 +73,14 @@
                             </p>
                         </div>      
               </div>
-                <form action="">
+                <form action="" onsubmit="alert('success')" >
                     <div class="email-input">
                         <label for="email">Email Address</label>
-                        <input type="email" >
+                        <input type="email" required id="email" >
                     </div>
                     <div class="password-input">
                         <label for="email">Password</label>
-                        <input type="password" > 
+                        <input type="password" required id="password"> 
                     </div>
 
                     <div class="checkbox">
@@ -112,8 +112,8 @@
                         Get update of our services and offers
                     </li>
                     <li class="email-for-newsletter">
-                        <form action="">
-                            <input type="email" placeholder="Email">
+                        <form action=""  onsubmit="alert('success')">
+                            <input type="email" placeholder="Email" required id="email">
                             <button type="submit" class="submit-button">
                                 Subscribe
                             </button>
