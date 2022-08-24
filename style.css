@@ -81,7 +81,6 @@ p{
     margin: 5px 0;
     transition: all 0.3s ease;
   }
-
 .chinedu-login-button{
     background: rgba(19, 21, 21, 0.12);
     box-shadow: 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
@@ -92,8 +91,11 @@ p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     cursor: pointer;
-    margin-top: 1.3rem;
 } 
+.chinedu-login-button:hover{
+    background: var(--primary-color);
+    color: var(--white);  
+}
 
 /* LOGIN SECTION */
 .chinedu-login-section{
@@ -266,7 +268,7 @@ input{
     display: grid;
     gap: 4rem;
 }
-.footer-item ,li{
+.footer-items li{
     margin-top: 2rem;
 }
 .email-for-newsletter form{
@@ -313,18 +315,19 @@ margin-left: 1rem;
 .copyright{
     text-align: center;
     margin-top: 6rem;
+    font-size: 1.4rem;
 }
 
 
 
 /* RESPONSIVEness usig MEdia QUERIES */
 
-/*targetting tablets and some mini laptop screen*/
+/*targetting some tablets and some mini laptop screen*/
 @media (max-width:1024px){
     .footer-content{
         grid-template-columns: repeat(3,1fr);
     }
-    .g1{
+    .first-item{
         grid-column: span 3;
         margin: 0 auto;
     }
@@ -337,15 +340,15 @@ margin-left: 1rem;
     .chinedu-nav-menu{
       position: fixed;
       left: -100%;
-      top: 45px;
+      top: 35px;
       gap: 0;
       flex-direction: column;
       background-color: var(--bg-color);
       text-align: left;
-      font-size: 2.4rem;
+      font-size: 1.8rem;
       font-weight: 500;
       width: 100%;
-      min-height: 90vh;
+      height: 96vh;
       transition: 0.3s;
       padding-bottom: 2rem;
     }
@@ -393,7 +396,7 @@ margin-left: 1rem;
   }
 
   /*for mobile screen*/
-  @media (max-width:500px){
+  @media (max-width:428px){
 
     body{
         background: var(--white);
@@ -416,4 +419,7 @@ margin-left: 1rem;
         margin-top: 3rem;
     }
   }
+
+
+
 
