@@ -41,8 +41,9 @@ p{
 }
 
 
-/* HEADER SECTION */
+/* Desktop view first */
 
+/* HEADER SECTION */
 .chinedu-header{
     position: fixed;
     width: 100%;
@@ -99,7 +100,7 @@ p{
 
 /* LOGIN SECTION */
 .chinedu-login-section{
-    padding-top: 20rem;
+    padding-top: 12rem;
 }
 .login-panel{
     max-width: 50.8rem;
@@ -248,7 +249,7 @@ input{
 
 /* FOOTER SECTION */
 .chinedu-footer-section{
-    margin-top: 10rem;
+    margin-top: 6rem;
     background: var(--footer-color);
     color: var(--white);
     padding: 2rem;
@@ -322,7 +323,7 @@ margin-left: 1rem;
 
 /* RESPONSIVEness usig MEdia QUERIES */
 
-/*targetting some tablets and some mini laptop screen*/
+/*targetting some laptop screen and some tablet screen*/
 @media (max-width:1024px){
     #footer-content{
         grid-template-columns: repeat(3,1fr);
@@ -334,8 +335,17 @@ margin-left: 1rem;
 }
 
 
+
+
+@media (max-width:960px){
+    .chinedu-nav-menu{
+        gap: 3rem;
+    }
+}
+
+
 /*for tablets screen*/
- @media (max-width:960px){
+ @media (max-width:766px){
 
     .chinedu-nav-menu{
       position: fixed;
@@ -387,7 +397,7 @@ margin-left: 1rem;
    
   
   }
-   /*for ipads and mobile screen*/
+   
   @media (max-width:686px){
     #footer-content{
         display: block;
