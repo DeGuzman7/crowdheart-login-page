@@ -48,7 +48,7 @@ p{
     position: fixed;
     width: 100%;
     background:var(--bg-color);
-    box-shadow: 0px 9px 12px 1px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.14);
 }
 .chinedu-nav-bar{
     display: flex;
@@ -66,7 +66,7 @@ p{
     color: var(--nav-text-color);
 }
 .chinedu-nav-link.active{
-    text-decoration: underline solid var(--secondary-color) 20%;
+    color: var(--primary-color);
 }
 
   
@@ -84,7 +84,6 @@ p{
   }
 .chinedu-login-button{
     background: rgba(19, 21, 21, 0.12);
-    box-shadow: 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
     border: none;
     border-radius: 8px;
     padding: 1rem;
@@ -106,7 +105,7 @@ p{
     max-width: 50.8rem;
     margin: 0 auto;
     background: var(--white);
-    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-color);
     border-radius: 3.2rem;
     padding: 5.2rem 7rem;
 }
@@ -161,8 +160,7 @@ p{
     display: flex;
     flex-direction: row;
     font-size: 1.4rem;
-    color: var(--grey);
-    
+    color: var(--grey); 
 }
 .login-alternative-line
 p:before, p:after{
@@ -170,17 +168,17 @@ p:before, p:after{
     flex: 1 1;
     border-bottom: 1px solid var(--line-color);
     margin: auto;
-  }
+}
 
-  p:before {
+p:before {
     margin-right: 10px;
-  }
+}
   p:after {
     margin-left: 10px
-  }
+}
  form{
     margin-top: 2rem;
- }
+}
 
 label,input{
     display: block;
@@ -196,7 +194,7 @@ label{
     margin-bottom: 1rem;
 
 }
-.email-input 
+.email-input
 input{
     width: 100%;
     padding: 0.6rem;
@@ -210,6 +208,9 @@ input{
     border: 1px solid var(--input-border-color);
     border-radius: 8px;
 }
+input:focus {
+    outline: none !important;
+  }
 .password-input{
     display: grid;
     gap: 0.6rem;
