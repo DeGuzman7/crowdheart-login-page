@@ -294,7 +294,7 @@ input:focus {
 /* FOOTER SECTION */
 .chinedu-footer-section{
     margin-top: 6rem;
-    background: var(--footer-color);
+    background: var(--second-color);
     color: var(--white);
     padding: 2rem;
     max-width: 100%;
@@ -322,7 +322,7 @@ input:focus {
 }
 .email-for-newsletter
  form input{
-    background: var(--footer-color);
+    background: transparent;
     border: 1px solid var(--white);
     padding: 0.5rem;
     color: var(--white);
@@ -331,7 +331,7 @@ input:focus {
 }
 .email-for-newsletter 
 .submit-button{
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border: none;
     color: var(--white);
     padding: 0.8rem 2.5rem;
