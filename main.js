@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       elems.forEach( elem => elem.classList.remove( 'active' ) );
         
-        evt.target.classList.add( 'active' );
+        evt.target.classList.add( 'active'  );
     };
     
     navigation.addEventListener( 'mousedown', makeActive );
